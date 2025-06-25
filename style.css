@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+*{
+    margin: 0px ;
+    padding: 0px ;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: Rethink sans;
+    font-weight: 400;
+    color: #333;
+}
+
+html{
+    scroll-behavior: smooth  ;
+    overflow-x : hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+/*Navigation bar*/
+header{
+    display: flex;
+    justify-content: space-between; 
+    
+    margin: 0 auto;                 
+    padding: 30px 70px 11px 70px;     
+    position: fixed;                
+    top: 0;                         
+    left: 0;                        
+    right: 0;                       
+    background-color: white;        
+    z-index: 1000; 
+    border-bottom: 0.5px solid rgb(216, 215, 215);
+
+}
+nav{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    font-weight: 310;  
+}
+.links{
+    
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+ 
+}
+.links a{
+    text-decoration: none;
+    color:#333;
+    position: relative;
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(111, 92, 177);
+    transition: width 0.3s ease-in-out;
+}
+
+.links a:hover {
+    color:rgb(111, 92, 177);
+}
+
+.links a:hover::after {
+width: 100%;
+}
+
+.logo{
+    padding: 6px 15px 6px 15px;
+    background-color: rgb(227, 221, 249);
+    border-radius: 20px 20px 20px 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;;
+    font-size: 1.2rem;
+}
+.close,.menu{
+    width: 2rem;
+    height: 2rem;
+}
+.mobile-nav{
+    display: none;
+    background: transparent ;
+    cursor :pointer;
+}
+
+.close{
+    display:none;
+}
+
+.whole-document{
+    margin-top: 5rem;
+}
+
+
+/*----------------------------MAIN-------------------------------*/
+#main{
+    height: 80vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+#picture{
+    height: 18rem;
+    width: 18rem;
+}                                                                                                                                                                                                                                                                                                                                                           
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.name-occ{
+    font-weight: 300;
+    font-size: 2.5rem;
+    color:#333;
+}
+.about{
+    margin-left: 6.6rem;
+}
+.description{
+    font-size: large;
+    width: 27em;
+    color: #5c5b5b;
+}
+#occ{
+    color: rgb(111, 92, 177);
+}
+/*-------------------------qualification--------------------*/
+#Qualifications{
+    height: 80vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.container-education{
+    /*border-top:1px solid rgb(216, 215, 215);*/
+    background-color:#f9f9f9 ;
+    margin-right: auto;
+    margin-left: auto;
+    width: 52rem;
+    padding: 2em;
+    border: 1px solid #dedede;
+    border-radius: 20px;
+}
+
+.title{
+    font-size: 37px;
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+    margin: 4rem;
+}   
+
+.title:after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 3px;
+    background-color: rgb(111, 92, 177);;
+    margin: 10px auto;
+} 
+.para-info{
+    line-height: 1.6;
+    font-size: medium;
+    font-weight: 500;
+}
+#institute{
+    color: #333;
+    font-size: large;
+    font-weight: 300;
+    background-color: #f9f9f9;
+    
+}
+#degree{
+    margin-left: 0em;
+    color: #333;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-right: 8rem;
+}
+hr{
+    margin:auto;
+    width: 70%;
+    color: #f9f9f9;
+}
+/*-------------------------skills--------------------*/
+#skills{
+    height: 90vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.container-skills{
+    /*border-top:1px solid rgb(216, 215, 215);*/
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+   
+}
+
+.card-skill{
+    list-style: none;
+    font-size: large;
+    width: 15rem;
+    background-color: #f9f9f9;
+    padding: 2.5rem;
+    border-radius: 5%;
+    border: 1px solid hsl(0, 0%, 87%);
+}
+.head{
+    margin-bottom: 1rem;
+}
+.badge{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+.card-skill-title{
+    margin: 1em 0 1em 0;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: rgb(61, 50, 101) ;
+}
+.card-skill li{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    margin-left: 0.5em;
+}
+/*-------------------------skills--------------------*/
+#Projects{
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-bottom: 2rem;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: 20em;
+    padding: 2em;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.project-card p {
+    color: #777;
+    margin: 10px 0 10px 0;
+}
+
+.project-card .project-link {
+    color: rgb(111, 92, 177);
+    text-decoration: none;
+}
+
+.project-card .project-link:hover {
+    color: rgb(45, 45, 45);
+}
+
+/*---------contact--------------------*/
+#contact{
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.contact-container{
+    display: flex;
+    align-items: center; 
+    justify-content: center  
+}
+.size
+{
+    height: 35px ;
+    width: 35px ;
+    margin-right: 8px;
+}
+.contact-card{
+    padding: 2em;
+    border-radius: 50px;
+    border: 1px solid  black;
+    gap: 1em;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.contact-info{
+    display: flex;
+    margin-left: 30px;
+}
+.info{
+    font-size: larger;
+}
