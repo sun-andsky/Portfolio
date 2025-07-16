@@ -1,0 +1,218 @@
+@media( max-width:1400px ){
+     
+  *{
+    font-size: 1rem;
+  }
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14141418;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+   
+  }
+
+    /* Logo */
+    .logo {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .logo, .menu-icon {
+      flex: 1;
+    }
+
+    .menu-icon {
+      text-align: left;
+    }
+
+    .logo {
+      text-align: right;
+    }
+
+    /* Hamburger icon */
+    .menu-icon {
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Mobile Menu Styling */
+    .mobile-menu {
+      position: fixed;
+      top: 64px; /* Adjust based on header height */
+      left: 0;
+      width: 100%;
+      background-color: #111;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.4s ease, opacity 0.4s ease;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobile-menu.active {
+      max-height: 300px; /* Adjust as needed */
+      opacity: 1;
+    }
+
+    .mobile-menu li {
+      list-style: none;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .mobile-menu li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: block;
+    }
+
+
+    .whole-document{
+        margin-top: 7rem;
+        margin-left: 0;
+    }
+  
+  
+    /* Hide desktop nav */
+    .nav {
+      display: none;
+    }
+
+    #main, #skills, #Projects, #contact {
+      margin: 1rem 1rem;
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+  
+    .about {
+      margin: 2rem 0 0 0;
+    }
+    .name-occ{
+      font-weight: 600;
+      font-size: 1.5rem;
+      color:#cbcbcb;
+      margin:0rem 1rem 0rem 1rem ;
+    }
+    #occ{
+      color: #00eeff;
+      font-size: 1.5rem;
+    }
+  
+    #my-pic {
+      height: 13rem;
+      width: 13rem;
+    }
+  
+    .description {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .education{
+      display: flex;
+      flex-direction: row;
+      padding: 1rem 1rem 1rem 1rem;
+      font-size: 0.8rem;
+      color: #a6a6a6;
+      background-color: #00eeff06;
+      text-align: left;
+      justify-content: center;
+
+    }
+    .bi-buildings{
+      font-size: 2.1rem;
+      padding: 0rem 1rem 1rem 0rem;
+      color: #a6a6a6;
+    }
+    .edu-info{
+      display: flex;
+      flex-direction: column;
+      color: #a6a6a6;
+    }
+    #degree{
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    #institute{
+      color: #a6a6a6e7;
+    }
+
+    #status{
+      color: #a6a6a6e7;
+      font-weight: 500;
+      font-size: 0.8rem;
+    }
+  
+    .container-skills {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-skill {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .card-skill li {
+      width: 100%;
+    }
+  
+    .project {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+    }
+  
+    .slider {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .project-title{
+      text-align: left;
+    }
+      
+    .project-info {
+      text-align: left;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+  
+    .contact-left {
+      display: none;
+    }
+  
+    .contact-card {
+      flex: auto;
+    }
+    
+  
+  }
+      
