@@ -91,11 +91,18 @@
       display: none;
     }
 
-    #main, #skills, #Projects, #contact {
+    #main, #skills, #contact {
       margin: 1rem 1rem;
       height: auto;
       flex-direction: column;
       text-align: center;
+    }
+
+    #Projects{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   
     .home {
@@ -204,15 +211,18 @@
       padding: 2rem 1rem;
       text-align: center;
     }
-  
+
     .contact-left {
-      display: none;
+      display: block;   /* keep it visible */
+      margin-bottom: 1.5rem; /* add spacing */
     }
-  
+
     .contact-card {
       flex: auto;
+      margin: auto;
+      width: 80%;
     }
-    
+
   
   }
       
