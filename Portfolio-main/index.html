@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="new_style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <!--------------------------navigation bar------------------------>
+    <header class="header">
+        <nav class="nav">
+            <div>
+                <ul class="links">
+                    <li><a href="#main" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#Projects" class="nav-link">Project</a></li>
+                    <li><a href="#contact" class="nav-link">Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-header">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="logo">Nikita</div>
+        </div>
+        <ul class="mobile-menu" id="mobileMenu">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="whole-document">
+        <!--------------------------main------------------------>
+        <section id="main">
+            <div class="home">
+                <img id="my-pic" src="Assets/pic-teal.jpg" alt="Profile Picture">
+                <div class="about">
+                    <p class="name-occ">
+                        Hi ! I'm Nikita. <br>A <span id="occ">Software Developer</span><br>Based in India.
+                    </p> 
+                    <br>
+                    <p class="description">Passionate about building innovative applications with AI/ML technologies, creating seamless, scalable solutions</p>
+                    <div class="education">
+                        <i class="bi bi-buildings"></i>
+                        <div class="edu-info">
+                            <span id="degree">B.Tech, Computer science and technology</span> 
+                            <span id="institute">Usha mittal institute of Technology, SNDT</span>
+                            <span id="status">(2024-2027)</span>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </section>
+
+        <!--------------------------skills------------------------>
+        <section id="skills">
+            <div class="skill">
+                <div class="container-skills">
+                    <!-- Languages -->
+                    <div id="languages">
+                        <ul class="card-skill">
+                            <p class="card-skill-title">LANGUAGES</p>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                                Python
+                            </li>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                                C++
+                            </li>
+                            <p class="card-skill-title">DATABASE</p>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                                PostgreSQL
+                            </li>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                                MySQL
+                            </li>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+                                MongoDB
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ML & AI -->
+                    <div id="ml-ai">
+                        <ul class="card-skill">
+                            <p class="card-skill-title">ML & AI</p>
+                            <li class="ai-skill">
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" />
+                                PyTorch
+                            </li>
+                            <li class="ai-skill">
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/huggingface/huggingface-original.svg" />
+                                Hugging Face
+                            </li>
+                            <li class="ai-skill">
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
+                                Scikit-learn
+                            </li>
+                            <li class="ai-skill">
+                                <i class="bi bi-cpu icons"></i>
+                                NLP / NER
+                            </li>
+                            <li class="ai-skill">
+                                <i class="bi bi-graph-up icons"></i>
+                                EDA & Model Evaluation
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- WEB & APIs -->
+                    <div id="web-apis">
+                        <ul class="card-skill">
+                            <p class="card-skill-title">WEB & APIs</p>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                                React
+                            </li>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+                                Django
+                            </li>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" />
+                                FastAPI
+                            </li>
+                            <li>
+                                <i class="bi bi-plug icons"></i>
+                                REST APIs
+                            </li>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                                HTML
+                            </li>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                                CSS
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools -->
+                    <div id="tools">
+                        <ul class="card-skill">
+                            <p class="card-skill-title">TOOLS</p>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                                Git & GitHub
+                            </li>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                                Postman
+                            </li>
+                            <li>
+                                <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" />
+                                Streamlit
+                            </li>
+                            <li>
+                                <i class="bi bi-arrow-repeat icons"></i>
+                                CI/CD
+                            </li>
+                            <li>
+                                <i class="bi bi-server icons"></i>
+                                Render
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--------------------------projects---------------------->
+        <section id="Projects">
+            <!--------Project 1--------------->
+            <div class="project">
+                <span class="project-number">#Project 01</span>
+                <img class="project-image" src="Assets/2.png" alt="Project 1">
+                <div class="project-info">
+                    <span class="project-title">BioMedical NER & Relation Extraction</span>
+                    <div class="project-description">An AI-powered biomedical NLP system that identifies chemicals, diseases, and their relationships from medical literature using transformer-based models.<br><br></div>
+                    <button class="view"><a href="https://github.com/sun-andsky/Biomedical_NER_and_Relation_Extraction">View Project <i class="bi bi-caret-right-fill"></i></a></button>
+                </div>
+            </div>
+            <!--------Project 1--------------->
+            <div class="project">
+                <span class="project-number">#Project 02</span>
+                <img class="project-image" src="Assets/5.png" alt="Project 1">
+                <div class="project-info">
+                    <span class="project-title">LLM Hallucination Detector</span>
+                    <div class="project-description">A smart evaluation platform that detects hallucinated or factually inconsistent responses generated by Large Language Models.<br><br></div>
+                    <button class="view"><a href="https://github.com/sun-andsky/llm-hallucination-detector">View Project <i class="bi bi-caret-right-fill"></i></a></button>
+                </div>
+            </div>
+            <!--------Project 1--------------->
+            <div class="project">
+                <span class="project-number">#Project 03</span>
+                <img class="project-image" src="Assets/Home_1.png" alt="Project 1">
+                <div class="project-info">
+                    <span class="project-title">Churn Predictor</span>
+                    <div class="project-description">A smart churn predictor for banks, powered by machine learning. Interactive, fast, and built with Streamlit for easy use. <br><br></div>
+                    <button class="view"><a href="github.com/sun-andsky/Churn_Predictor">View Project <i class="bi bi-caret-right-fill"></i></a></button>
+                </div>
+            </div>
+            <!--------Project 2--------------->
+            <div class="project">
+                <span class="project-number">#Project 04</span>
+                <img class="project-image" src="Assets/Home.png" alt="Project 2">
+                <div class="project-info">
+                    <span class="project-title">Price Tracker</span>
+                    <div class="project-description">A app that tracks product prices in real-time using automated web scraping. Users can search, save items to their Bookmark and get the best Deals ! </div>
+                    <button class="view"><a href="github.com/sun-andsky/Product_Price_Tracker">View Project <i class="bi bi-caret-right-fill"></i></a></button>
+                </div>
+            </div>
+            <!--------Project 3--------------->
+            <div class="project">
+                <span class="project-number">#Project 05</span>
+                <img class="project-image" src="Assets/Filter_products.png" alt="Project 3">
+                <div class="project-info">
+                    <span class="project-title">Techno</span>
+                    <div class="project-description">Techno is a modern and minimal electronics store website built with pure HTML and CSS. <br><br></div>
+                    <button class="view"><a href="https://github.com/sun-andsky/Techno">View Project <i class="bi bi-caret-right-fill"></i></a></button>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------contact me------------------------------>
+        <section id="contact">
+            <div class="contact-wrapper">
+                <!-- Background gradient glow -->
+                <div class="contact-glow"></div>
+                
+                <!-- Main contact card -->
+                <div class="contact-main-card">
+                    <div class="contact-content">
+                        <!-- Left side: Heading and description -->
+                        <div class="contact-header">
+                            <h2 class="contact-title">
+                                "Curious Developer.<br>Creative Coder."
+                            </h2>
+                            <p class="contact-subtitle">
+                                Let's connect and build something great together!
+                            </p>
+                        </div>
+                        
+                        <!-- Right side: Contact information -->
+                        <div class="contact-info">
+                            <div class="contact-details">
+                                <div class="contact-name">
+                                    <h3>Nikita Maurya</h3>
+                                    <p class="contact-email">nikitamaurya2605@gmail.com</p>
+                                </div>
+                                
+                                <div class="social-links">
+                                    <a href="https://linkedin.com/in/nikita" target="_blank" class="social-icon" data-tooltip="LinkedIn">
+                                        <div class="icon-container">
+                                            <i class="devicon-linkedin-plain"></i>
+                                        </div>
+                                    </a>
+                                    <a href="https://github.com/nikita" target="_blank" class="social-icon" data-tooltip="GitHub">
+                                        <div class="icon-container">
+                                            <i class="devicon-github-original"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
