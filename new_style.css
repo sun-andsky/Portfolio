@@ -222,6 +222,67 @@ html{
     font-weight: 500;
     font-size: 0.8rem;
 }
+
+/* Social Links Row */
+.social-links-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 27em; /* Match education card width */
+}
+
+.social-item {
+    text-decoration: none;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.social-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: 12px;
+    padding: 1rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    min-height: 70px;
+    justify-content: center;
+}
+
+.social-item:hover .social-card {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.15);
+    border-color: rgba(6, 182, 212, 0.3);
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #06b6d4;
+    transition: all 0.3s ease;
+}
+
+.social-item:hover .social-icon {
+    color: #0891b2;
+    transform: scale(1.1);
+}
+
+.social-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #475569;
+    transition: all 0.3s ease;
+}
+
+.social-item:hover .social-label {
+    color: #0F172A;
+}
 /*-------------------------skills--------------------*/
 #skills{
     height: 100vh;
